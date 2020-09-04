@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import {Provider} from 'react-redux'
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import memoryUtils from "./utils/memoryUtils"
+import storeUtils from "./utils/storageUtils"
+import store from './redux/store'
 
+memoryUtils.user =  storeUtils.getData('USER_KEY')
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>
+    ,
   document.getElementById('root')
 );
 

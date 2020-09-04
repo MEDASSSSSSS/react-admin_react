@@ -1,0 +1,66 @@
+const menu = [
+{
+  title:'首页',
+  path:'/home',
+  key:'home',
+  icon:''
+},
+{
+  title:'商品',
+  key:'goods',
+  icon:'',
+  children:[
+    {
+      title:'分类管理',
+      path:'/category',
+      key:'category',
+      icon:''
+    },
+    {
+      title:'商品管理',
+      path:'/product',
+      key:'product',
+      icon:''
+    },
+  ]
+},
+{
+  title:'用户管理',
+  path:'/user',
+  key:'user',
+  icon:''
+},
+{
+  title:'角色管理',
+  path:'/role',
+  key:'role',
+  icon:''
+},
+{
+  title:'统计',
+  key:'charts',
+  icon:'',
+  children:[
+    {
+      title:'折线图',
+      path:'/charts/line',
+      key:'line',
+      icon:''
+    },
+    {
+      title:'柱状图',
+      path:'/charts/bar',
+      key:'bar',
+      icon:''
+    },
+    {
+      title:'饼图',
+      path:'/charts/pie',
+      key:'pie',
+      icon:''
+    }
+  ]
+},
+]
+
+export default menu
